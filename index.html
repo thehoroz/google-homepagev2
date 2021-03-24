@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .navbartop {
+            display: flex;
+            justify-content: flex-end;
+            font-size: 14px;
+        }
+        .navbartop > div {
+            margin: 10px;
+        }
+        #gmail:hover {
+            text-decoration: underline;
+        }
+        #images:hover {
+            text-decoration: underline;
+        }
+        #pointgrid { 
+            display: grid;
+            grid-template-columns: repeat(3, 4px);
+            grid-template-rows: repeat(3, 4px);
+            column-gap: 2px;
+            row-gap: 2px;
+        }
+        #pointgrid >div {
+            background-color: #555555;
+            border-radius: 50%;
+        }
+        #pointgrid:hover {
+            box-shadow: 0px 0px 4px 2px #777;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbartop">
+        <div id="gmail">
+            <a href="#">Gmail</a>
+        </div>
+        <div id="images">
+            <a href="#">Images</a>
+        </div>
+        <div id="pointgrid">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="profilepic">
+
+        </div>
+    </nav>
+    <div id="logo">
+        <img src="googlelogo.png" alt="The logo of Google">
+    </div>
+</body>
+</html>
