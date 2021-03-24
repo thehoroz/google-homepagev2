@@ -1,0 +1,1 @@
+This is my second run of The Odin Project where I try to do everything on my own. Previously I didn't understand much and looked a lot at the code of others. This time I'm confident and will do everything on my own. Let's go!
