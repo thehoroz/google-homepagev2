@@ -18,9 +18,10 @@
             display: flex;
             justify-content: flex-end;
             font-size: 13px;
+            align-items: center;
         }
         .navbartop > div {
-            margin: 10px;
+            margin: 13px;
         }
         #gmail:hover {
             text-decoration: underline;
@@ -34,6 +35,8 @@
             grid-template-rows: repeat(3, 4px);
             column-gap: 2px;
             row-gap: 2px;
+            height: 16px;
+            width: 16x;
         }
         #pointgrid >div {
             background-color: #555555;
@@ -43,6 +46,81 @@
             border-radius: 50%;
             box-shadow: 0 0 0px 12px #EEE;
             cursor: pointer;   
+        }
+        .profilepic {
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+        }
+        .profilepic:hover {
+            cursor: pointer;
+            box-shadow: 0 0 0px 4px #EEE;
+        }
+        #googlesearch {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 200px;
+        }
+        #googlelogo {
+            height: auto;
+            width: 270px;
+            margin-bottom: 20px;
+        }
+        .searchandicon {
+            position: relative;
+        }
+        #searchbar {
+            height: 42px;
+            width: 530px;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            padding-left: 40px;
+        }
+        #searchbar:hover {
+            box-shadow: 0 0 3px 3px rgb(241, 241, 241);
+        }
+        input[type="text"] {
+            font-size: 16px;
+            color: rgba(0,0,0,.87);
+            outline: none;
+        }
+        #magnifyicon {
+            position: absolute;
+            height: 18px;
+            width: 18px;
+            padding-left: 14px;
+            padding-top: 14px;
+        }
+        .buttonbois {
+            margin-top: 22px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .button {
+            margin-right: 5px;
+            padding: 0px 16px;
+            border: 1px solid #f8f9fa;
+            color: #3c4043;
+            height: 36px;
+            cursor: pointer;
+            background-color: #f8f8f8;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        
+        .button:hover {
+            border-radius: 3px;
+            box-shadow: 0 0 0 1px #d1cfcf;            
+        }
+        .languages {
+            margin-top: 27px;
+            font-size: 13px;
+        }
+        .langtext {
+            color: #233baa;
+        }
+        .langtext:hover {
+            text-decoration: underline;           
         }
     </style>
 
@@ -66,12 +144,24 @@
             <div></div>
             <div></div>
         </div>
-        <div id="profilepic">
-
+        <div class="profilepicdiv">
+            <img src="profilepic.png" class="profilepic" alt="logo">
         </div>
     </nav>
-    <div id="logo">
-        <img src="googlelogo.png" alt="The logo of Google">
+    <div id="googlesearch">
+            <img src="googlelogo.png" alt="The logo of Google" id="googlelogo">
+            <div class="searchandicon">     
+                <img src="magnifyingglass.png" id="magnifyicon">
+                <input type="text" id="searchbar">
+            </div>
+            <div class="buttonbois">
+                <button class="button">Google Search</button>
+                <button class="button">I'm Feeling Lucky</button>
+            </div>
+            <div class="languages">
+                Google offered in:  <a href="#" class="langtext">Nederlands</a>  <a href="#" class="langtext">Deutsch</a>
+            </div>
     </div>
+
 </body>
 </html>
