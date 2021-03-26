@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <style>
-        body {
+    <style>    
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
             font-family: Arial, Helvetica, sans-serif;
+        }
+        html, body {
+            min-width: 400px;
         }
         a {
             text-decoration: none;
@@ -93,7 +99,7 @@
             padding-top: 14px;
         }
         .buttonbois {
-            margin-top: 22px;
+            margin-top: 26px;
             font-family: Arial, Helvetica, sans-serif;
         }
         .button {
@@ -121,6 +127,41 @@
         }
         .langtext:hover {
             text-decoration: underline;           
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #f5f4f4;
+        }
+        .topfooter {
+            padding: 14px 0px 14px 25px;
+            border-bottom: 1px solid rgb(219, 219, 219);
+            font-size: 15px;
+            color: rgb(126, 126, 126);
+        }
+        .botfooter {
+            display: flex;
+            flex-direction: row;
+            font-size: 15px;
+            justify-content: space-between;
+            padding: 15px 30px;
+        }
+        .botfooter >div {
+            word-spacing:25px;
+        }
+        .wordsofbottom {
+            color: rgb(126, 126, 126);
+        }
+        .wordsofbottom:hover {
+            text-decoration: underline;
+        }
+        .wordsofbottom2 {
+            color: rgb(126, 126, 126);
+            word-spacing: normal;
+        }
+        .wordsofbottom2:hover {
+            text-decoration: underline;
         }
     </style>
 
@@ -162,6 +203,23 @@
                 Google offered in:  <a href="#" class="langtext">Nederlands</a>  <a href="#" class="langtext">Deutsch</a>
             </div>
     </div>
-
+    <footer>
+        <div class="topfooter">
+                Belgium
+        </div>
+        <div class="botfooter">
+            <div>
+                <a class="wordsofbottom" href="#">About</a>
+                <a class="wordsofbottom" href="#">Advertising</a> 
+                <a class="wordsofbottom" href="#">Business</a> 
+                <a class="wordsofbottom2" href="#">How Search Works</a>
+            </div>
+            <div>
+                <a class="wordsofbottom" href="#">Privacy</a>
+                <a class="wordsofbottom" href="#">Terms</a>
+                <a class="wordsofbottom" href="#">Settings</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
