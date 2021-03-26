@@ -1,1 +1,2 @@
 This is my second run of The Odin Project where I try to do everything on my own. Previously I didn't understand much and looked a lot at the code of others. This time I'm confident and will do everything on my own. Let's go!
+I finished the Google-homepage project in 2-3 days. It was so satisfying to do everything on my own and to understand very piece of code I put into it. I'm very proud of myself.
